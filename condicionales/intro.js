@@ -1,3 +1,4 @@
+
 console.log("hola mundo")
 
 let num1=4
@@ -208,9 +209,6 @@ if(miNombre === "laura" || pase === "vip"){
 }
 
 
-
-
-
 let numeroIncognita=8
 let numeroIngresado=prompt("Ingrese el numero que desee")
 
@@ -227,6 +225,7 @@ if(numeroIncognita < numeroIngresado){
         }
 }
 
+//ejercicio 15
 let jugador1=prompt("Jugador1: Ingrese su eleccion")
 let jugador2=prompt("Jugador2: Ingrese su eleccion")
 
@@ -234,9 +233,61 @@ let jugador2=prompt("Jugador2: Ingrese su eleccion")
 if(jugador1 == "piedra"  && jugador2 == "tijera"){
     alert("El jugador 1 ha ganado")
 }
-if(jugador1 == "tijera" && jugador2 == "piedra"){
+
+else if(jugador1 == "papel" && jugador2 == "piedra"){
+    alert("El jugador 1 ha ganado")
+}
+
+else if(jugador1 == "tijera" && jugador2 == "papel"){
+    alert("El jugador 1 ha ganado")
+}
+
+else if(jugador1 == "tijera"  && jugador2 == "piedra"){
     alert("El jugador 2 ha ganado")
 }
+
+else if(jugador1 == "piedra" && jugador2 == "papel"){
+    alert("El jugador 2 ha ganado")
+}
+
+else if(jugador1 == "papel" && jugador2 == "tijera"){
+    alert("El jugador 2 ha ganado")
+}
+else{
+alert("Alguien ha hecho trampa")
+}
+
+//ejercicio 16
+
+let digito=prompt("Ingresa un numero del 1 al 100")
+let digito2=prompt("Ingresa otro numero del 1 al 100")
+let operacionNumerica=prompt("Ingresa una operacion (+,-,*,/)")
+
+switch(operacionNumerica){
+    case "suma":
+        let suma = Number(digito) + Number(digito2)
+        alert(suma)
+        break;
+    case "resta":
+            let resta = Number(digito) - Number(digito2)
+            alert(resta)
+            break;
+    case "multiplicacion":
+            let multiplicacion = Number(digito) * Number(digito2)
+            alert(multiplicacion)
+            break;
+    case "division":
+        let division = Number(digito) / Number(digito2)
+        if (digito == 0){
+             alert("ERROR: el divisor no puede ser 0, vuelva a ingresar un numero");
+           }
+           else{
+            alert(division)
+           }
+            break;
+         
+}
+
 
 
     

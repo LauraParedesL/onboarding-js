@@ -77,4 +77,67 @@ let compra=(precio , cantidad) => {
         console.log(`el total es ${resultadoCompra} con 20% de descuento`)
     }
     return resultadoCompra
-}
+}   
+console.log(compra(1000 , 2))
+
+ //ejercicio 12
+
+ function esMayordeEdad(numero){
+    let resultadoNumero= numero
+    if(resultadoNumero >= 18){
+        console.log("Eres mayor de edad")
+    }else{
+        console.log("Eres menor de edad")
+    }
+    return resultadoNumero
+ }
+ console.log(esMayordeEdad(20))
+
+ //ejercicio 13
+
+ function ingresoAnual(ingreso , porcentaje){
+    let impuesto= ingreso * porcentaje
+    if(ingreso < 10000){
+        console.log(`el impuesto a pagar es el 10% de su ingreso, ${impuesto}`)
+    }
+    else if(ingreso >= 10000 && ingreso <= 20000){
+        console.log(`el impuesto a pagar es el 15% de su ingreso, ${impuesto}`)
+    }
+    else if(ingreso >= 2000){
+        console.log(`el impuesto a pagar es el 20% de su ingreso, ${impuesto}`)
+    }
+    
+    return impuesto
+ }
+ console.log(ingresoAnual(38000 , 0.20))
+
+ //ejercicio 14
+
+ function semana(numero){
+    let dias= numero
+    switch(dias){
+        case 1:
+            console.log("Es dia laboral")
+                break
+        case 2:
+            console.log("Es dia laboral")
+                break
+        case 3:
+            console.log("Es dia laboral")
+                break
+        case 4:
+            console.log("Es dia laboral")
+                break
+        case 5:
+            console.log("Es dia laboral")
+                break
+        case 6:
+             console.log("Es fin de semana")
+                break
+        case 7:
+            console.log("Es fin de semana")
+                break
+    }
+    
+ } 
+ console.log(semana(7))
